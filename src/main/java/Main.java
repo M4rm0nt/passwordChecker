@@ -54,7 +54,7 @@ public class Main {
                     } else if (validatePassword(password)) {
                         response = "{\"message\":\"Passwort ist stark und sicher.\"}";
                     } else {
-                        response = "{\"error\":\"Passwort entspricht nicht den Sicherheitsanforderungen:<ul><li>Ihr Passwort sollte eine Mindestlänge von acht Zeichen aufweisen und eine Kombination aus Buchstaben, Zahlen sowie Sonderzeichen enthalten, um den Sicherheitsanforderungen gerecht zu werden.<br></li><li>Bitte stellen Sie sicher, dass Ihr neues Passwort sich von allen bisherigen Passwörtern unterscheidet, um die Sicherheit zu maximieren.<br></li></ul>\"}";
+                        response = "{\"error\":\"Passwort entspricht nicht den Sicherheitsanforderungen:<ul><li>Ihr Passwort sollte eine Mindestlänge von acht Zeichen aufweisen und eine Kombination aus Buchstaben, Zahlen sowie Sonderzeichen enthalten, um den Sicherheitsanforderungen gerecht zu werden.<br></li></ul>\"}";
                         responseCode = 400;
                     }
                 } else {
