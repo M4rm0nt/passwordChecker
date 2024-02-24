@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="passwordCheckerApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Passwort Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+
+<div ng-controller="PasswordController as pc">
+    <div class="card">
+        <h2>Passwort Checker</h2>
+        <input type="password" ng-model="pc.password" placeholder="Passwort eingeben"/>
+        <button ng-click="pc.checkPassword()">Überprüfen</button>
+        <div ng-if="pc.passwordFeedback" ng-bind-html="pc.passwordFeedback"></div>
+    </div>
+</div>
+
+</body>
+</html>
